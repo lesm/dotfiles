@@ -1,0 +1,72 @@
+-- return {
+-- 	cmd = { "tailwindcss-language-server", "--stdio" },
+-- 	filetypes = {
+-- 		"html.erb", -- Rails ERB templates
+-- 		"erb", -- Alternative ERB extension
+-- 		"eruby", -- ERB files
+-- 		"html", -- Standard HTML
+-- 		"css", -- Plain CSS
+-- 		"scss", -- Rails commonly uses SCSS
+-- 		"sass", -- Some Rails projects use SASS
+-- 		"javascript", -- JS files (for @apply directives)
+-- 		"typescript", -- TS files (if using TS in Rails)
+-- 		"javascriptreact", -- JSX (if using React in Rails)
+-- 		"haml", -- HAML templates
+-- 		"slim", -- SLIM templates
+-- 	},
+-- 	root_markers = {
+-- 		"tailwind.config.js",
+-- 		"tailwind.config.cjs",
+-- 		"postcss.config.js",
+-- 		"package.json", -- Rails often puts config in /app/javascript
+-- 		"Gemfile.lock", -- Common Ruby project root marker
+-- 	},
+-- 	settings = {
+-- 		tailwindCSS = {
+-- 			experimental = {
+-- 				classRegex = {
+-- 					-- ERB-specific patterns
+-- 					'class:? "([^"]*)', -- Ruby hash syntax
+-- 					"class:? \\'([^\\']*)", -- Single quotes
+-- 					"class:? [\\\"\\']([^\\\"\\']*)[\\\"\\']", -- Dynamic class strings
+--
+-- 					-- View Component patterns
+-- 					"classes\\(([^)]*)\\)", -- ViewComponent classes method
+--
+-- 					-- Standard Tailwind patterns
+-- 					"tw`([^`]*)", -- Twin.macro
+-- 					'tw="([^"]*)', -- JSX
+-- 					'className="([^"]*)', -- React
+-- 				},
+-- 			},
+-- 			includeLanguages = {
+-- 				eruby = "erb",
+-- 				erb = "html",
+-- 				["html.erb"] = "html",
+-- 			},
+-- 			lint = {
+-- 				cssConflict = "warning",
+-- 				invalidApply = "error",
+-- 				invalidScreen = "error",
+-- 				invalidVariant = "error",
+-- 				invalidConfigPath = "error",
+-- 				invalidTailwindDirective = "error",
+-- 				recommendedVariantOrder = "warning",
+-- 			},
+-- 			classAttributes = {
+-- 				"class",
+-- 				"className",
+-- 				"class:list",
+-- 				"classList",
+-- 				"ngClass",
+-- 			},
+-- 			validate = true,
+-- 		},
+-- 	},
+-- 	init_options = {
+-- 		userLanguages = {
+-- 			erb = "html",
+-- 			["html.erb"] = "html",
+-- 		},
+-- 	},
+-- }

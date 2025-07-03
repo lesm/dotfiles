@@ -1,0 +1,10 @@
+-- return {
+-- 	cmd = { "ruby-lsp" },
+-- 	filetypes = { "ruby", "eruby" }, -- Filetypes supported by Ruby LSP
+-- 	root_markers = { "Gemfile", ".git" }, -- Common Ruby project root markers
+-- 	capabilities = {
+-- 		general = {
+-- 			positionEncodings = { "utf-16" },
+-- 		},
+-- 	},
+-- }

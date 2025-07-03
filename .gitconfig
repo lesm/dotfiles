@@ -1,0 +1,23 @@
+[user]
+  name = Luis Silva
+  email = silmar.dll@gmail.com
+[core]
+  editor = vim
+  excludesfile = /Users/silva/.gitignore_global
+[push]
+  default = current
+[pull]
+  default = current
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[merge]
+  tool = vimdiff3
+[mergetool]
+  keepBackup = false
+  prompt = false
+[color]
+  ui = true
+[status]
+  showuntrackedfiles = all
