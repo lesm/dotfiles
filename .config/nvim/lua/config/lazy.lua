@@ -81,3 +81,5 @@ vim.lsp.config("tailwindcss", {
 		},
 	},
 })
+
+require("ibl").setup()
