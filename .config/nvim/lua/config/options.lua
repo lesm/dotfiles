@@ -29,8 +29,8 @@ vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 
 -- Configure how new splits should be opened
-vim.o.splitright = true
-vim.o.splitbelow = true
+-- vim.o.splitright = true
+-- vim.o.splitbelow = true
 
 -- Set global indentation to 2 spaces
 vim.opt.shiftwidth = 2 -- Indent size for <<, >>, ==, etc.
