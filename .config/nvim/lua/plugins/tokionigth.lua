@@ -18,5 +18,8 @@ return {
 		-- Like many other themes, this one has different styles, and you could load
 		-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
 		vim.cmd.colorscheme("tokyonight-night")
+		vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#FFBF00" })
+		vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "white" })
+		vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#FF5F1F" })
 	end,
 }
