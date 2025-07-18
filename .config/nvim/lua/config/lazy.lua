@@ -57,7 +57,7 @@ require("lazy").setup({
 	},
 })
 
-vim.lsp.enable({ "tailwindcss", "ruby-lsp" })
+vim.lsp.enable({ "tailwindcss", "ruby_lsp" })
 
 vim.lsp.config("tailwindcss", {
 	settings = {

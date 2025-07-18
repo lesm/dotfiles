@@ -90,6 +90,8 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='nvim'
 
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
