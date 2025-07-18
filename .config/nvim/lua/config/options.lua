@@ -64,3 +64,12 @@ vim.o.scrolloff = 5
 vim.o.confirm = true
 
 vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
+-- vim-tmux-navigator settings
+vim.g.tmux_navigator_disable_when_zoomed = 1
+
+-- netrw settings
+vim.g.netrw_preview = 1
+vim.g.netrw_banner = 0
+vim.g.netrw_list_hide = "(^|ss)\zs.S+,(^|ss)ntuser.S+"
+vim.g.netrw_bufsettings = "noma nomod nu nobl nowrap ro"
