@@ -96,6 +96,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 # Use GNU ls if available
 if command -v gls >/dev/null; then
   alias ls='gls --color=auto'
+  alias l='gls -la --color=auto'
   export LS_COLORS="di=01;33:fi=01;07;36:ex=01;37:ow=01;04:*.avi=01;34:*.mp4=01;34:*.mp3=01;34:*.jpg=01;91:*.jpeg=01;91:*.gif=01;91:*.png=01;91:*.PDF=01;36:*.pdf=01;36:*.zip=01;32:*.tar=01;32:*.gz=01;32:*.bz2=01;32:*.iso=01;32:*.md=01;37:*.odt=01;36:*.txt=01;36:*.docx=01;36:*.cpp=1;36:*.c=1;34:*.rb=01;35:*.erb=01;35:*.vim=1;32:*.ova=1;32:*.java=1;31:*.js=0;33:*.html=1;31:*.css=1;34:*.scss=1;34:*.markdown=01;36:*.ruby-version=01;35:*.ruby-gemset=01;35:*.gitignore=01;32:*.lock=0:*.rdoc=0:*.ru=01;31"
   zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 else
