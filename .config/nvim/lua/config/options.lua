@@ -36,6 +36,7 @@ vim.o.timeoutlen = 300
 vim.opt.shiftwidth = 2 -- Indent size for <<, >>, ==, etc.
 vim.opt.tabstop = 2 -- Visual width of a tab character
 vim.opt.expandtab = true -- Convert tabs to spaces (recommended)
+-- vim.opt.smartindent = true -- Enable smart indentation for new lines
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
